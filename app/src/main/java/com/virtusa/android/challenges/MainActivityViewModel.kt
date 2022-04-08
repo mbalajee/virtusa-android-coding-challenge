@@ -18,13 +18,10 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
             ItemRow("Apple"),
             ItemRow("Bread")
         )
-
-        itemListViewState = ItemListViewState("Delivery Items", items)
+        itemListViewState = ItemListViewState(items)
     }
 
     fun setStateUpdateListener(listener: UpdateListener?) {
         this.listener = listener
-
-        listener?.onUpdate(itemListViewState)
     }
 }

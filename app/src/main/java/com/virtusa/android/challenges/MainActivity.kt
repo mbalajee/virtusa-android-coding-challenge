@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun renderItemList(state: ItemListViewState) {
-
+        // Update the Adapter
     }
 
     private fun bindViews() {
